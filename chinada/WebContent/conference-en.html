@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<!--meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no"-->
+<title>conferenceInfo</title>
+<link href="library/bootstrap-3.3.7-dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+<link href="css/custom.css" rel="stylesheet" type="text/css" />
+<!--link href="css/fwslider.css" rel="stylesheet" type="text/css" /-->
+<!--link href="css/allinone_carousel.css" rel="stylesheet" type="text/css" /-->
+<!--link href="library/slider/css/jquery.slideBox.css" rel="stylesheet" type="text/css" /-->
+<link href="library/swiper-4.5.0/dist/css/swiper.min.css" rel="stylesheet" type="text/css" />
+<script src="js/jquery-1.11.0.min.js"></script>
+<!--script src="library/slider/js/jquery.slideBox.js" type="text/javascript"></script-->
+<script src="library/swiper-4.5.0/dist/js/swiper.min.js" type="text/javascript"></script>
+<!-- -script src="js/fwslider.js"></script-->
+<script src="library/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+<!--script src="js/allinone_carousel.js"></script-->
+<script>
+		jQuery(function() {
+			
+			/*
+			$('#lunbodemo').slideBox({
+
+				duration : 0.3,//滚动持续时间，单位：秒
+
+				easing : 'linear',//swing,linear//滚动特效
+
+				delay : 5,//滚动延迟时间，单位：秒
+
+				hideClickBar : false,//不自动隐藏点选按键
+
+				clickBarRadius : 10
+
+			});
+			*/	
+			var swiper = new Swiper('.swiper-container', {
+				
+			      spaceBetween: 30,
+			      centeredSlides: true,
+			      //autoplay:false,//等同于以下设置
+			      
+			      autoplay: {
+			        delay: 3000,
+			        disableOnInteraction: false,
+			      },
+			      
+			      pagination: {
+			        el: '.swiper-pagination',
+			        clickable: true,
+			      },
+			      navigation: {
+			        nextEl: '.swiper-button-next',
+			        prevEl: '.swiper-button-prev',
+			      },
+			    });
+			function show(){
+				
+				
+				   var date1=new Date(2019,7,16);
+		           var date2=new Date();
+		           var date3 = new Date(date2.getFullYear(),date2.getMonth()+1,date2.getDate());
+		          
+		           var date=(date1.getTime()-date3.getTime())/(1000*60*60*24);/*不用考虑闰年否*/
+		           //alert("相差"+date+"天");
+			           
+					//输出还剩多少时间
+					document.getElementById("numbersDay").innerHTML=date;
+					/*document.getElementById("2").innerHTML=hour;
+					document.getElementById("3").innerHTML=minute;
+					document.getElementById("4").innerHTML=second;*/
+					setTimeout(show,1000);
+					//if(timediff==0){return;}
+				}
+				show();
+			
+		});
+	</script>
+</head>
+<body>
+<div class="topbar">
+	<div class="topbar_nav">
+    	<div class="inner clearfix">
+            <ul>
+            	
+                <li class="licn"><a href="http://english.chinada.cn/map/index.jhtml">Site Map</a>&nbsp;|&nbsp;</li>
+                <li class="licn"><a href="conference-zh.html">Chinese</a></li>
+            </ul>
+    	</div>
+    </div>
+    
+</div>
+
+<div class="topBanner" id="topBanner">
+	<img src="imgs/y/11.jpg" class="img-responsive">
+	<!--div class="container">
+	  <div class="row">
+		  <div class="col-md-8">.col-md-8</div>
+		  <div class="col-md-4">.col-md-4</div>
+	  </div>
+	</div-->
+	
+</div>
+<div class="navcontent">
+	<div class="container-fluid">
+	  <div class="row">
+		  <ul class="navcontentUl nav nav-pills nav-justified">
+			<li class="navcontentUl_li"><a href="">Home Page&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+			<li class="navcontentUl_li"><a href="#">News&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+			<li class="navcontentUl_li"><a href="#">Participant Information&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+			<li class="navcontentUl_li"><a href="#">Materials of Symposium&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+			<li class="navcontentUl_li"><a href="data/info.rar">About the Registration&nbsp;&nbsp;&nbsp;&nbsp;|</a></li>
+			<li><a href="contact-en.html">Contact Information</a></li>
+		</ul>
+	  </div>
+	</div>
+	
+</div>
+<div class="content">
+	<div class="container">
+	  <div class="row">
+		  <div class="col-xs-8 col-sm-8 col-md-8">
+		  	<div class="lunboPic">
+				<!--img src="imgs/z/11.jpg" class="img-responsive"-->
+				<!--div id="lunbodemo" class="slideBox">
+
+				  <ul class="items">
+				
+					<li><a href="#" title="首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开"><img src="imgs/lunbo1.png"></a></li>
+					 <li><a href="#" title="首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开"><img src="imgs/lunbo1.png"></a></li>
+				
+				   
+				  </ul>
+				
+				</div-->
+				<div class="swiper-container">
+				    <div class="swiper-wrapper">
+				        <div class="swiper-slide">
+				        	<div class="swiper-slide-img">
+				        		<a href="news-1.html" title="首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开"><img src="imgs/lunbo1.png"></a>
+				        	</div>
+				        	<div class="swiper-slide-title">
+				        		<p>首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开</p>
+				        	</div>
+				        	
+				        	
+				        </div>
+				        <div class="swiper-slide">
+				        	<div class="swiper-slide-img">
+				        		<a href="news-1.html" title="首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开"><img src="imgs/lunbo1.png"></a>
+				        	</div>
+				        	<div class="swiper-slide-title">
+				        		<p>首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开</p>
+				        	</div>
+				        	
+				        	
+				        </div>
+				        <div class="swiper-slide">
+				        	<div class="swiper-slide-img">
+				        		<a href="news-1.html" title="首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开"><img src="imgs/lunbo1.png"></a>
+				        	</div>
+				        	<div class="swiper-slide-title">
+				        		<p>首届CHINADA国际反兴奋剂工作专业研讨会将于2019年7月16日-17日在京召开</p>
+				        	</div>
+				        	
+				        </div>
+				    </div>
+				    <!-- 如果需要分页器 -->
+				    <!--div class="swiper-pagination"></div-->
+				    
+				    <!-- 如果需要导航按钮 -->
+				    <div class="swiper-button-prev"></div>
+				    <div class="swiper-button-next"></div>
+				    
+				    <!-- 如果需要滚动条 -->
+				    <div class="swiper-scrollbar"></div>
+				</div>
+			</div>
+			<div class="canhuixinxi">
+				<div class="canhuixinxi_title">
+					<h5>Participant Information</h5>
+				</div>
+				<div class="row canhuixinxi_content">
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<a href="#"><img src="imgs/y/4.jpg" class="img-responsive"></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<a href="#"><img src="imgs/y/3.jpg" class="img-responsive"></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<a href="#"><img src="imgs/y/2.jpg" class="img-responsive"></a>
+					</div>
+					<div class="col-xs-3 col-sm-3 col-md-3">
+						<a href="participant-list-en.html"><img src="imgs/y/1.jpg" class="img-responsive"></a>
+					</div>
+				</div>
+			</div>
+			<div class="huiyicailiao" style="margin-bottom: 10px;">
+				<div class="huiyicailiao_title">
+					<h5>Materials of Symposium</h5>
+				</div>
+				<div class="row huiyicailiao_content">
+					<div class="col-xs-4 col-sm-4 col-md-4">
+						<a href="#"><img src="imgs/y/10.jpg" class="img-responsive"></a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4">
+						<a href="#"><img src="imgs/y/9.jpg" class="img-responsive"></a>
+					</div>
+					<div class="col-xs-4 col-sm-4 col-md-4">
+						<a href="#"><img src="imgs/y/8.jpg" class="img-responsive"></a>
+					</div>
+					
+				</div>
+			</div>
+			
+		  </div>
+		  <div class="col-xs-4 col-sm-4 col-md-4">
+		  	<div class="searchbox">
+				<div class="">
+					
+						<div class="input-group">
+							<input type="text" class="form-control">
+							<span class="input-group-btn">
+								<button class="btn btn-default" type="button">
+									<span class="glyphicon glyphicon-search"></span>
+								</button>
+							</span>
+						</div><!-- /input-group -->
+					
+				</div><!-- /.col-lg-6 -->
+				
+			</div>
+			<div class="huiyidongtai">
+				<div class="huiyidongtai_title">
+					<div style="float:left;"><h5>News</h5></div>
+					<div style="float:right;"><a href="#"><h5>More></h5></a></div>
+				</div>
+				<div class="row huiyidongtai_content">
+					<div class="col-xs-12 col-sm-12 col-md-12 huiyidongtai_news">
+						<a class="huiyidongtai_content_a" href="news-1.html">首届CHINADA国际反兴奋剂工作专业研讨会将在京召开</a>
+					</div>
+				</div>
+			</div>
+			<div class="daojishiPic">
+				<!--img src="imgs/y/7.jpg" class="img-responsive"-->
+				<div class="">
+				 <div class="row" style="text-align:center;">
+				  	<h1 style="font-weight:bold;">Count Down</h1>
+				  </div>
+				  <div id="timer" class="row">
+					  <div class="days"><div class="numbers" id="numbersDay">334</div>days to the meeting</div> 
+					  <!--div class="hours col-xs-3 col-sm-3 col-md-3"> <div class="numbers">20</div>hours</div> 
+					  <div class="minutes col-xs-3 col-sm-3 col-md-3"><div class="numbers">17</div>minutes</div> 
+					  <div class="seconds col-xs-3 col-sm-3 col-md-3"><div class="numbers">48</div>seconds</div--> 
+				  </div>
+				 
+				  
+				</div>
+			</div>
+			<div class="baomingcailiaoxiazaiPic">
+				<a href="data/info.rar"><img src="imgs/y/6.jpg" class="img-responsive"></a>
+				
+			</div>
+			<div class="lianxifangshiPic">
+				<a href="contact-en.html"><img src="imgs/y/5.jpg" class="img-responsive"></a>
+				
+			</div>
+		  </div>
+	  </div>
+	</div>
+	
+</div>
+<!--div id="footer" style="margin-top:50px;">
+		<p><a href="#topBanner" class="go_top" title="返回顶部"></a></p>
+	<style>td{    vertical-align: bottom;}</style>
+		<div class="inner">
+	    	
+	<table>
+		<tbody><tr class="h25">
+		   <td class="w300" style="
+		    width: 250px;"><span>Address：</span>N0.1 Anding Road, Chaoyang District, Beijing, China</td>
+		                <td class="w250" style="
+		    width: 200px;"><span>PostCode1：</span>100029</td>
+		                <td style="width: 320px;"><span>Email：</span>contact@chinada.cn</td>
+		   <td rowspan="3" style="font-size:10px">Official Account<br>
+		<img src="imgs/z/ewm.jpg" style="width: 60px;margin-top:3px;"></td>
+	            </tr>
+	            <tr class="h25">
+	            	<td class="w300"><span>Telephone ：</span>86-10-64912131</td>
+	                <td class="w250"><span>FAX：</span>86-10-64912136</td>
+	                <td><span>Mail Box：</span>Mail box No. 100029-70, Beijing</td>
+	               
+	            </tr>
+	            <tr class="h25">
+	            	<td colspan="3"><span>Copyright ©CHINADA 2015-2016</span></td>
+	            </tr>
+	        </tbody>
+	        </table>	
+	    </div>
+</div-->
+</body>
+</html>
