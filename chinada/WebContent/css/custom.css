@@ -211,11 +211,11 @@
 
     }
     .swiper-slide {
-      text-align: center;
+      /*text-align: center;
       font-size: 18px;
       background: #fff;
 
-      /* Center slide text vertically */
+      
       display: -webkit-box;
       display: -ms-flexbox;
       display: -webkit-flex;
@@ -227,15 +227,18 @@
       -webkit-box-align: center;
       -ms-flex-align: center;
       -webkit-align-items: center;
-      align-items: center;
+      align-items: center;*/
     }
-    .swiper-slide-title{    text-align: left;
+    .swiper-slide-title{    
+    text-align: left;
     position: absolute;
     bottom: 0px;
     width: 100%;
     background-color: #000;
     opacity: 0.5;
-    color: #FFF;}
+    color: #FFF;
+    
+    }
     .swiper-slide-title p{
         margin-bottom: 5px;
     margin-top: 5px;
