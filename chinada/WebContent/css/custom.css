@@ -48,11 +48,12 @@
     background-color: #000;
 }
 .canhuixinxi_title h5{
-	color: #fff;
-	    padding-top: 5px;
-    padding-bottom: 5px;
+	    color: #fff;
+    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
-        padding-left: 5px;
+    padding-left: 5px;
+    font-size: 15px;
 }
 .canhuixinxi_content{
 	margin-top: -10px;
@@ -63,10 +64,11 @@
 }
 .huiyicailiao_title h5{
 	color: #fff;
-	    padding-top: 5px;
-    padding-bottom: 5px;
+	    padding-top: 10px;
+    padding-bottom: 10px;
     font-weight: bold;
         padding-left: 5px;
+            font-size: 15px;
 }
 .huiyicailiao_content{
 	margin-top: -10px;
@@ -175,6 +177,9 @@
     margin-right: 0px;
     margin-left: 0px;
 }
+.huiyidongtai{
+	height:175px;
+}
 .huiyidongtai_news
 {
 	margin-top:10px;
@@ -243,3 +248,10 @@
         margin-bottom: 5px;
     margin-top: 5px;
     }
+.download-item{
+	padding: 5px 0 5px 15px;
+    margin-bottom: 5px;
+}
+.download{
+	margin:0 200px;
+}
